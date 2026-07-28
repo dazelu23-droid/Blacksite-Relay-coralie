@@ -2,6 +2,9 @@ extends SceneTree
 
 const TEST_CLASSES: Array = [
 	preload("res://tests/unit/test_smoke.gd"),
+	preload("res://tests/unit/test_player_movement.gd"),
+	preload("res://tests/unit/test_weapon_state.gd"),
+	preload("res://tests/integration/test_damageable_target.gd"),
 ]
 
 func _initialize() -> void:
