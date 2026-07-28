@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#071015" />
+    <meta name="description" content="Blacksite Relay — tactical browser combat sandbox" />
+    <title>Blacksite Relay // Combat Evaluation</title>
+  </head>
+  <body>
+    <canvas id="game" aria-label="Blacksite Relay 3D combat sandbox"></canvas>
+    <div id="vignette" aria-hidden="true"></div>
+    <div id="crosshair" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <header class="topbar">
+      <div class="brand"><span>BLACKSITE</span><b>RELAY</b></div>
+      <div class="classification">COMBAT EVALUATION // BR-07</div>
+      <div id="status" class="status">SYSTEM READY</div>
+    </header>
+    <aside class="objective">
+      <span>TRAINING DIRECTIVE</span>
+      <strong>NEUTRALIZE ALL TARGETS</strong>
+      <div id="target-count">HOSTILES 02</div>
+    </aside>
+    <section class="telemetry">
+      <div><span>STANCE</span><b id="stance">GROUNDED</b></div>
+      <div><span>RANGE</span><b id="range">-- M</b></div>
+    </section>
+    <section class="ammo" aria-live="polite">
+      <span>AR // AUTO</span>
+      <div><strong id="magazine">30</strong><i>/</i><b id="reserve">090</b></div>
+      <small id="weapon-state">READY</small>
+    </section>
+    <div id="hitmarker" aria-hidden="true"></div>
+    <div id="start-overlay" role="dialog" aria-modal="true">
+      <div class="start-card">
+        <span class="eyebrow">AUTHORIZED PERSONNEL ONLY</span>
+        <h1>BLACKSITE<br /><em>RELAY</em></h1>
+        <p>Close-quarters weapons calibration. Two active threat silhouettes. Live ammunition authorized.</p>
+        <button id="start-button">ENTER SIMULATION</button>
+        <div class="controls">
+          <span><kbd>WASD</kbd> MOVE</span>
+          <span><kbd>MOUSE</kbd> AIM</span>
+          <span><kbd>LMB</kbd> FIRE</span>
+          <span><kbd>R</kbd> RELOAD</span>
+          <span><kbd>SPACE</kbd> JUMP</span>
+        </div>
+        <small id="lock-message">CLICK TO CAPTURE CURSOR · ESC TO RELEASE</small>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

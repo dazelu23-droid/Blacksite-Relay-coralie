@@ -1,3 +1,5 @@
 .worktrees/
-.godot/
+node_modules/
+dist/
+.vite/
 *.tmp
