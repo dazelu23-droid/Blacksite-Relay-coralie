@@ -13,4 +13,5 @@ func run() -> Array[String]:
 	target.apply_damage(200.0)
 	if not is_zero_approx(target.health):
 		failures.append("damage floor: expected zero")
+	target.free()
 	return failures
